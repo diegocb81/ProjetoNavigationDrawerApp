@@ -63,6 +63,9 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra(Intent.EXTRA_TEXT, "Escolha um App de e-mail");
 
         intent.setType("message/rfc822");
+        //intent.setType("text/plain");
+        //intent.setType("image/*");
+        //intent.setType("application/pdf");
 
         startActivity(Intent.createChooser(intent, "Compartilhar"));
     }
