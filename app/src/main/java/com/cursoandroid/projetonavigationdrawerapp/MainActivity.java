@@ -48,7 +48,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void enviarEmail(){
-        Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:48999477316"));
+
+        String celular = "48999477316";
+        String imagem = "https://destinoflorianopolis.com.br/wp-content/uploads/2016/07/Praia-do-Mo%C3%A7ambique.jpg";
+        String endereco = "https://www.google.com.br/maps/place/Praia+do+Mo%C3%A7ambique/@-27.4988339,-48.4141929,14z/data=!3m1!4b1!4m5!3m4!1s0x9527400eb6e86da1:0xa9bd79eefcc8023b!8m2!3d-27.4937746!4d-48.3955175";
+        //Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse(celular));
+        //Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(imagem));
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(endereco));
         startActivity(intent);
     }
 
