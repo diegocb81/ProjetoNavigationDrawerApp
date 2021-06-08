@@ -76,6 +76,10 @@ public class SobreFragment extends Fragment {
                 .addWebsite("https://www.google.com/", "Acesse nosso site")
 
                 .addGroup("Redes sociais")
+                .addFacebook("https://www.facebook.com/profile.php?id=100014965924482", "Facebook")
+                .addInstagram("diegocb81", "Instagram")
+                .addGitHub("diegocb81", "GitHub")
+                .addPlayStore("com.google.android.apps.plus", "Download App")
 
                 .create();
 
