@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import com.cursoandroid.projetonavigationdrawerapp.R;
 
 import mehdi.sakout.aboutpage.AboutPage;
+import mehdi.sakout.aboutpage.Element;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -67,6 +68,9 @@ public class SobreFragment extends Fragment {
                 "que desejam alcançar o sucesso através da excelência em gestão e " +
                 "da busca pela qualidade.";
 
+        Element versao = new Element();
+        versao.setTitle("Versão 1.0");
+
         return new AboutPage(getActivity())
                 .setImage(R.drawable.logo)
                 .setDescription(descricao)
@@ -80,6 +84,8 @@ public class SobreFragment extends Fragment {
                 .addInstagram("diegocb81", "Instagram")
                 .addGitHub("diegocb81", "GitHub")
                 .addPlayStore("com.google.android.apps.plus", "Download App")
+
+                .addItem(versao)
 
                 .create();
 
